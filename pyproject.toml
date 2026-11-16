@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cobaye"
+version = "0.1.0"
+description = "Run the code samples of a course or README in a throwaway container and check their output"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Morgan Pierrefeu" }]
+requires-python = ">=3.8"
+
+[project.scripts]
+cobaye = "cobaye:main"
+
+[project.urls]
+Homepage = "https://github.com/evaspace/cobaye"
+
+[tool.setuptools]
+py-modules = ["cobaye"]
